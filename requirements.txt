@@ -26,3 +26,5 @@ langgraph
 tavily-python
 polygon
 langchain-astradb
+
+-e .
