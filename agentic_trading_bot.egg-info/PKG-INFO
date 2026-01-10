@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: agentic-trading-bot
+Version: 0.1.0
+Author: manish
+Author-email: manishsurabhi23@gmail.com
+Requires-Dist: langchain-astradb
+Requires-Dist: langchain
+Requires-Dist: tavily-python
+Requires-Dist: polygon
+Requires-Dist: grandalf
+Requires-Dist: lancedb
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist

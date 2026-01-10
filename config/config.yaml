@@ -1,5 +1,5 @@
-astra_db:
-  collection_name: "chatbot_ecomm"
+vector_db:
+  vdb_name: "test"
 
 embedding_model:
   provider: "openai"
@@ -15,3 +15,8 @@ llm:
 data_ingestion:
   csv_path: 'D:\krish_naik_data_science_course\NLP\customer_support_system\data\flipkart_product_review.csv'
   file_name: "flipkart_product_review.csv"
+
+tools:
+  tavily:
+    max_results: 5
+  

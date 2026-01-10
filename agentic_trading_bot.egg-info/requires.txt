@@ -1,0 +1,6 @@
+langchain-astradb
+langchain
+tavily-python
+polygon
+grandalf
+lancedb

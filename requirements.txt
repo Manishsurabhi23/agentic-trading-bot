@@ -11,6 +11,7 @@ wandb
 spacy
 torchinfo
 scikit-learn
+langchain
 langchain-core
 langchain-community
 langchain_groq
@@ -26,5 +27,11 @@ langgraph
 tavily-python
 polygon
 langchain-astradb
+pinecone
+fastapi
+flask
+uvicorn
+pydantic
+
 
 -e .

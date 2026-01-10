@@ -11,5 +11,5 @@ logging.basicConfig(
     format="[%(asctime)s] %(lineno)d %(name)s - %(levelname)s - %(message)s",
     level=logging.INFO,
 )
-#logger = logging.getLogger("my_agentics_app")
+#logger = logging.getLogger("my_agentics_app")  default name will be root, we use this to give a custom name
 #logger.info("test log message")
