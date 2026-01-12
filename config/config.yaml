@@ -1,5 +1,5 @@
 vector_db:
-  vdb_name: "test"
+  vdb_name: "trading-bot"
 
 embedding_model:
   provider: "openai"
