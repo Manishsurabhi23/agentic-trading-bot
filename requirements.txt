@@ -32,6 +32,8 @@ fastapi
 flask
 uvicorn
 pydantic
+langchain_pinecone
+langchain-tavily
 
 
 -e .

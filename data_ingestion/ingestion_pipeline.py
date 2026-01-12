@@ -7,11 +7,11 @@ from langchain_community.document_loaders import PyPDFLoader, Docx2txtLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_pinecone import PineconeVectorStore
 from utils.model_loaders import ModelLoader
-from utils.config_loader import load_config
+from config.config_loader import load_config
 from pinecone import ServerlessSpec, Pinecone
 from uuid import uuid4
 import sys
-from exception.exceptions import TradingBotException
+from exception.exception import TradingBotException
 
 class DataIngestion:
     """
@@ -80,10 +80,10 @@ class DataIngestion:
             pinecone_client = Pinecone(api_key=self.pinecone_api_key)
             index_name = self.config["vector_db"]["index_name"]
 
-            if index_name not in [i.name for i in pinecone_client.list_indexes()]:
+            if index_name not in [i.name for i in pinecone_client.list_indexes()]:  #if the index is not there, create it
                 pinecone_client.create_index(
                     name=index_name,
-                    dimension=768,  # adjust if needed based on embedding model
+                    dimension=self.model_loader.load_embeddings().dimension,  # adjust if needed based on embedding model
                     metric="cosine",
                     spec=ServerlessSpec(cloud="aws", region="us-east-1"),
                 )

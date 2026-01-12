@@ -1,7 +1,7 @@
 README.md
 setup.py
 agent/__init__.py
-agent/agents.py
+agent/workflow.py
 agentic_trading_bot.egg-info/PKG-INFO
 agentic_trading_bot.egg-info/SOURCES.txt
 agentic_trading_bot.egg-info/dependency_links.txt
@@ -9,11 +9,14 @@ agentic_trading_bot.egg-info/requires.txt
 agentic_trading_bot.egg-info/top_level.txt
 config/__init__.py
 config/config_loader.py
+custom_logging/__init__.py
+custom_logging/custom_logging.py
+data_ingestion/__init__.py
+data_ingestion/ingestion_pipeline.py
 data_models/__init__.py
+data_models/models.py
 exception/__init__.py
 exception/exception.py
-logging/__init__.py
-logging/logger.py
 prompt_library/__init__.py
 prompt_library/prompt.py
 toolkit/__init__.py
